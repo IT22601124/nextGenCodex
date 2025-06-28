@@ -25,10 +25,10 @@ function Contact() {
   return (
     <div className="min-h-screen bg-white text-[#001F3F]">
       {/* Hero Section */}
-      <section className="bg-[#001F3F] text-white py-20">
+      <section className="bg-white text-[#001F3F] py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold mb-6">Get in Touch</h1>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
+          <h1 className="text-5xl font-bold mb-6 text-[#001F3F]">Get in Touch</h1>
+          <p className="text-xl text-[#001F3F] max-w-2xl mx-auto">
             Ready to start your next project? Let's discuss how we can help bring your vision to life.
           </p>
         </div>
@@ -53,7 +53,7 @@ function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-[#001F3F]/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#001F3F] focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 border border-[#001F3F] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#001F3F] focus:border-transparent transition-all duration-300"
                     placeholder="Your full name"
                   />
                 </div>
@@ -69,7 +69,7 @@ function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-[#001F3F]/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#001F3F] focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 border border-[#001F3F] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#001F3F] focus:border-transparent transition-all duration-300"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -85,7 +85,7 @@ function Contact() {
                     onChange={handleChange}
                     required
                     rows="6"
-                    className="w-full px-4 py-3 border border-[#001F3F]/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#001F3F] focus:border-transparent transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 border border-[#001F3F] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#001F3F] focus:border-transparent transition-all duration-300 resize-none"
                     placeholder="Tell us about your project or inquiry..."
                   />
                 </div>
@@ -100,7 +100,7 @@ function Contact() {
             </div>
 
             {/* Contact Information */}
-            <div className="bg-[#001F3F]/5 p-8 rounded-xl">
+            <div className="bg-white border border-[#001F3F] p-8 rounded-xl">
               <h2 className="text-3xl font-bold text-[#001F3F] mb-8">Contact Information</h2>
               
               <div className="space-y-8">
@@ -112,8 +112,8 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#001F3F] mb-2">Phone</h3>
-                    <p className="text-[#001F3F]/70">+94 11 234 5678</p>
-                    <p className="text-[#001F3F]/70">+94 77 123 4567</p>
+                    <p className="text-[#001F3F]">+94 11 234 5678</p>
+                    <p className="text-[#001F3F]">+94 77 123 4567</p>
                   </div>
                 </div>
 
@@ -125,8 +125,8 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#001F3F] mb-2">Email</h3>
-                    <p className="text-[#001F3F]/70">info@nextgencodex.com</p>
-                    <p className="text-[#001F3F]/70">support@nextgencodex.com</p>
+                    <p className="text-[#001F3F]">info@nextgencodex.com</p>
+                    <p className="text-[#001F3F]">support@nextgencodex.com</p>
                   </div>
                 </div>
 
@@ -139,7 +139,7 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#001F3F] mb-2">Address</h3>
-                    <p className="text-[#001F3F]/70">
+                    <p className="text-[#001F3F]">
                       Nextgen CodeX<br />
                       123 Tech Street<br />
                       Colombo 03, Sri Lanka<br />
@@ -156,9 +156,9 @@ function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-[#001F3F] mb-2">Business Hours</h3>
-                    <p className="text-[#001F3F]/70">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-[#001F3F]/70">Saturday: 9:00 AM - 1:00 PM</p>
-                    <p className="text-[#001F3F]/70">Sunday: Closed</p>
+                    <p className="text-[#001F3F]">Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p className="text-[#001F3F]">Saturday: 9:00 AM - 1:00 PM</p>
+                    <p className="text-[#001F3F]">Sunday: Closed</p>
                   </div>
                 </div>
               </div>

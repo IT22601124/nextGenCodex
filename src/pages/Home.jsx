@@ -111,25 +111,25 @@ function HomePage() {
       </div>
 
       {/* Hero Section */}
-      <section className="min-h-[80vh] flex items-center justify-center bg-[#001F3F] text-white">
+      <section className="min-h-[80vh] flex items-center justify-center bg-white">
         <div className="text-center max-w-3xl mx-auto px-6">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-            <span className="block text-white">Transforming Ideas</span>
-            <span className="block text-white">Into Digital Reality</span>
+            <span className="block text-[#001F3F]">Transforming Ideas</span>
+            <span className="block text-[#001F3F]">Into Digital Reality</span>
           </h1>
-          <p className="text-xl text-white/80 my-8 max-w-2xl mx-auto">
+          <p className="text-xl text-[#001F3F] my-8 max-w-2xl mx-auto">
             We craft innovative software solutions that drive business growth and technological advancement with precision and passion.
           </p>
           <div className="flex justify-center gap-6 mt-10">
             <a
               href="/contact"
-              className="px-10 py-4 rounded-lg font-semibold bg-white text-[#001F3F] hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="px-10 py-4 rounded-lg font-semibold bg-[#001F3F] text-white hover:bg-[#001F3F]/90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get Started
             </a>
             <a
               href="/projects"
-              className="px-10 py-4 rounded-lg font-semibold bg-transparent text-white border-2 border-white hover:bg-white hover:text-[#001F3F] transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="px-10 py-4 rounded-lg font-semibold bg-white text-[#001F3F] border-2 border-[#001F3F] hover:bg-[#001F3F] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Our Projects
             </a>
@@ -141,9 +141,9 @@ function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold tracking-wider text-[#001F3F] uppercase">Services</span>
+            <span className="text-2xl font-semibold tracking-wider text-[#001F3F] uppercase">Services</span>
             <h2 className="mt-4 text-4xl font-extrabold text-[#001F3F]">Everything You Need to Build Amazing Software</h2>
-            <p className="mt-4 text-xl text-[#001F3F]/70 max-w-2xl mx-auto">
+            <p className="mt-4 text-xl text-[#001F3F] max-w-2xl mx-auto">
               Comprehensive software development services to help your business thrive in the digital age.
             </p>
           </div>
@@ -151,14 +151,14 @@ function HomePage() {
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="relative bg-white rounded-xl border border-[#001F3F]/20 p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2"
+                className="relative bg-[#001F3F] rounded-xl border border-white p-8 shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="absolute -top-6 left-6 flex items-center justify-center h-14 w-14 rounded-xl bg-white border border-[#001F3F]/30 shadow-lg">
+                <div className="absolute -top-6 left-6 flex items-center justify-center h-14 w-14 rounded-xl bg-white border border-[#001F3F] shadow-lg">
                   {feature.icon}
                 </div>
                 <div className="mt-8">
-                  <h3 className="text-xl font-bold text-[#001F3F] mb-3">{feature.title}</h3>
-                  <p className="text-[#001F3F]/70 leading-relaxed">{feature.description}</p>
+                  <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
+                  <p className="text-white leading-relaxed">{feature.description}</p>
                 </div>
               </div>
             ))}
@@ -167,12 +167,12 @@ function HomePage() {
       </section>
 
       {/* Tech Stack Section */}
-      <section className="py-20 bg-[#001F3F] text-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold tracking-wider text-white/80 uppercase">Technologies</span>
-            <h2 className="mt-4 text-4xl font-extrabold text-white">Our Technology Stack</h2>
-            <p className="mt-4 text-xl text-white/80 max-w-2xl mx-auto">
+            <span className="text-2xl font-semibold tracking-wider text-[#001F3F] uppercase">Technologies</span>
+            <h2 className="mt-4 text-4xl font-extrabold text-[#001F3F]">Our Technology Stack</h2>
+            <p className="mt-4 text-xl text-[#001F3F] max-w-2xl mx-auto">
               Modern technologies powering high-performance solutions
             </p>
           </div>
@@ -180,7 +180,7 @@ function HomePage() {
             {techStack.map((tech) => (
               <div
                 key={tech.name}
-                className="flex flex-col items-center justify-center h-32 bg-white rounded-xl border border-white/20 font-bold text-[#001F3F] shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+                className="flex flex-col items-center justify-center h-32 bg-[#001F3F] rounded-xl border border-[#001F3F] font-bold text-white shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
               >
                 <span className="text-3xl mb-2">{tech.icon}</span>
                 <span>{tech.name}</span>
@@ -194,16 +194,16 @@ function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold tracking-wider text-[#001F3F] uppercase">Testimonials</span>
+            <span className="text-2xl font-semibold tracking-wider text-[#001F3F] uppercase">Testimonials</span>
             <h2 className="mt-4 text-4xl font-extrabold text-[#001F3F]">What Our Clients Say</h2>
           </div>
           <div 
-            className="bg-white rounded-xl border border-[#001F3F]/20 p-10 mx-auto shadow-lg"
+            className="bg-[#001F3F] rounded-xl border border-[#001F3F] p-10 mx-auto shadow-lg"
             onMouseEnter={() => setIsHovering(true)}
             onMouseLeave={() => setIsHovering(false)}
           >
             <div className="flex items-center">
-              <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#001F3F]/30">
+              <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-[#001F3F]">
                 <img
                   src={testimonials[activeTestimonial].avatar}
                   alt={testimonials[activeTestimonial].name}
@@ -211,11 +211,11 @@ function HomePage() {
                 />
               </div>
               <div className="ml-6">
-                <h4 className="text-xl font-semibold text-[#001F3F]">{testimonials[activeTestimonial].name}</h4>
-                <p className="text-[#001F3F]/70">{testimonials[activeTestimonial].role}</p>
+                <h4 className="text-xl font-semibold text-white">{testimonials[activeTestimonial].name}</h4>
+                <p className="text-[#001F3F]">{testimonials[activeTestimonial].role}</p>
               </div>
             </div>
-            <blockquote className="mt-6 text-xl text-[#001F3F]/80 italic leading-relaxed">
+            <blockquote className="mt-6 text-xl text-white italic leading-relaxed">
               &ldquo;{testimonials[activeTestimonial].content}&rdquo;
             </blockquote>
             <div className="flex justify-center mt-8 space-x-3">
@@ -233,28 +233,28 @@ function HomePage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-[#001F3F] text-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <span className="text-sm font-semibold tracking-wider text-white/80 uppercase">Our Impact</span>
-            <h2 className="mt-4 text-4xl font-extrabold text-white">Delivering Results That Matter</h2>
+            <span className="text-sm font-semibold tracking-wider text-[#001F3F] uppercase">Our Impact</span>
+            <h2 className="mt-4 text-4xl font-extrabold text-[#001F3F]">Delivering Results That Matter</h2>
           </div>
           <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="bg-white rounded-xl border border-white/20 p-10 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-              <div className="text-5xl font-bold text-[#001F3F] mb-3">50+</div>
-              <div className="text-xl font-medium text-[#001F3F]/70">Projects Completed</div>
+            <div className="bg-[#001F3F] rounded-xl border border-white p-10 text-center shadow-sm hover:shadow-lg transition-all duration-300">
+              <div className="text-5xl font-bold text-white mb-3">50+</div>
+              <div className="text-xl font-medium text-white">Projects Completed</div>
             </div>
-            <div className="bg-white rounded-xl border border-white/20 p-10 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-              <div className="text-5xl font-bold text-[#001F3F] mb-3">100%</div>
-              <div className="text-xl font-medium text-[#001F3F]/70">Client Satisfaction</div>
+            <div className="bg-[#001F3F] rounded-xl border border-white p-10 text-center shadow-sm hover:shadow-lg transition-all duration-300">
+              <div className="text-5xl font-bold text-white mb-3">100%</div>
+              <div className="text-xl font-medium text-white">Client Satisfaction</div>
             </div>
-            <div className="bg-white rounded-xl border border-white/20 p-10 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-              <div className="text-5xl font-bold text-[#001F3F] mb-3">15+</div>
-              <div className="text-xl font-medium text-[#001F3F]/70">Technologies</div>
+            <div className="bg-[#001F3F] rounded-xl border border-white p-10 text-center shadow-sm hover:shadow-lg transition-all duration-300">
+              <div className="text-5xl font-bold text-white mb-3">15+</div>
+              <div className="text-xl font-medium text-white">Technologies</div>
             </div>
-            <div className="bg-white rounded-xl border border-white/20 p-10 text-center shadow-sm hover:shadow-lg transition-all duration-300">
-              <div className="text-5xl font-bold text-[#001F3F] mb-3">24/7</div>
-              <div className="text-xl font-medium text-[#001F3F]/70">Support</div>
+            <div className="bg-[#001F3F] rounded-xl border border-[#001F3F] p-10 text-center shadow-sm hover:shadow-lg transition-all duration-300">
+              <div className="text-5xl font-bold text-white mb-3">24/7</div>
+              <div className="text-xl font-medium text-white">Support</div>
             </div>
           </div>
         </div>
@@ -267,7 +267,7 @@ function HomePage() {
             <span className="block">Ready to Start Your Project?</span>
             <span className="block">Let's Build Something Amazing Together</span>
           </h2>
-          <p className="text-xl text-[#001F3F]/70 mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-[#001F3F] mb-10 max-w-2xl mx-auto">
             Contact us today to discuss your project requirements and get a free consultation.
           </p>
           <a

@@ -46,10 +46,10 @@ function Projects() {
   return (
     <div className="min-h-screen bg-white text-[#001F3F]">
       {/* Hero Section */}
-      <section className="bg-[#001F3F] text-white py-20">
+      <section className="bg-white text-[#001F3F] py-20">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-5xl font-bold mb-6">Our Projects</h1>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
+          <h1 className="text-5xl font-bold mb-6 text-[#001F3F]">Our Projects</h1>
+          <p className="text-xl text-[#001F3F] max-w-2xl mx-auto">
             Explore our portfolio of innovative digital solutions that drive business transformation and user engagement.
           </p>
         </div>
@@ -61,14 +61,14 @@ function Projects() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-[#001F3F] mb-6">Ongoing Projects</h2>
             <div className="w-24 h-1 bg-[#001F3F] mx-auto"></div>
-            <p className="text-[#001F3F]/70 mt-6 max-w-2xl mx-auto">
+            <p className="text-[#001F3F] mt-6 max-w-2xl mx-auto">
               Currently working on cutting-edge solutions that push the boundaries of technology and innovation.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
             {ongoingProjects.map((project) => (
-              <div key={project.id} className="bg-white border border-[#001F3F]/20 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div key={project.id} className="bg-white border border-[#001F3F] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <div className="relative">
                   <img 
                     src={project.image} 
@@ -82,11 +82,11 @@ function Projects() {
                 
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-[#001F3F] mb-3">{project.title}</h3>
-                  <p className="text-[#001F3F]/70 mb-4 leading-relaxed">{project.description}</p>
+                  <p className="text-[#001F3F] mb-4 leading-relaxed">{project.description}</p>
                   
                   {/* Progress Bar */}
                   <div className="mb-4">
-                    <div className="flex justify-between text-sm text-[#001F3F]/70 mb-2">
+                    <div className="flex justify-between text-sm text-[#001F3F] mb-2">
                       <span>Progress</span>
                       <span>{project.progress}%</span>
                     </div>
@@ -121,37 +121,37 @@ function Projects() {
       </section>
 
       {/* Recent Projects Section */}
-      <section className="py-20 bg-[#001F3F] text-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">Recent Projects</h2>
-            <div className="w-24 h-1 bg-white mx-auto"></div>
-            <p className="text-white/80 mt-6 max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold text-[#001F3F] mb-6">Recent Projects</h2>
+            <div className="w-24 h-1 bg-[#001F3F] mx-auto"></div>
+            <p className="text-[#001F3F] mt-6 max-w-2xl mx-auto">
               Successfully delivered projects that have made a significant impact on our clients' businesses.
             </p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
             {recentProjects.map((project) => (
-              <div key={project.id} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div key={project.id} className="bg-white border border-[#001F3F] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <div className="relative">
                   <img 
                     src={project.image} 
                     alt={project.title}
                     className="w-full h-48 object-cover"
                   />
-                  <div className="absolute top-4 right-4 bg-white text-[#001F3F] px-3 py-1 rounded-full text-sm font-medium">
+                  <div className="absolute top-4 right-4 bg-[#001F3F] text-white px-3 py-1 rounded-full text-sm font-medium">
                     {project.status}
                   </div>
                 </div>
                 
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-white mb-3">{project.title}</h3>
-                  <p className="text-white/80 mb-4 leading-relaxed">{project.description}</p>
+                  <h3 className="text-2xl font-bold text-[#001F3F] mb-3">{project.title}</h3>
+                  <p className="text-[#001F3F] mb-4 leading-relaxed">{project.description}</p>
                   
                   {/* Completion Date */}
                   <div className="mb-4">
-                    <span className="text-white/70 text-sm">Completed: {project.completionDate}</span>
+                    <span className="text-[#001F3F] text-sm">Completed: {project.completionDate}</span>
                   </div>
                   
                   {/* Technologies */}
@@ -159,14 +159,14 @@ function Projects() {
                     {project.technologies.map((tech, index) => (
                       <span 
                         key={index}
-                        className="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium"
+                        className="bg-[#001F3F]/10 text-[#001F3F] px-3 py-1 rounded-full text-sm font-medium"
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
                   
-                  <button className="w-full bg-white text-[#001F3F] py-3 rounded-lg font-semibold hover:bg-white/90 transition-all duration-300">
+                  <button className="w-full bg-white text-[#001F3F] border-2 border-[#001F3F] py-3 rounded-lg font-semibold hover:bg-[#001F3F] hover:text-white transition-all duration-300">
                     View Case Study
                   </button>
                 </div>
@@ -180,7 +180,7 @@ function Projects() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-[#001F3F] mb-6">Ready to Start Your Project?</h2>
-          <p className="text-[#001F3F]/70 mb-8 max-w-2xl mx-auto">
+          <p className="text-[#001F3F] mb-8 max-w-2xl mx-auto">
             Let's discuss how we can help bring your vision to life with our expertise and innovative solutions.
           </p>
           <div className="flex justify-center space-x-4">
