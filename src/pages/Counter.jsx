@@ -5,43 +5,33 @@ function Counter() {
   const [count, setCount] = useState(0)
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Counter Page</h1>
-      <div style={{ textAlign: 'center', margin: '20px 0' }}>
-        <p style={{ fontSize: '24px' }}>Count: {count}</p>
-        <button 
-          onClick={() => setCount(count + 1)}
-          style={{ 
-            padding: '10px 20px', 
-            fontSize: '16px', 
-            marginRight: '10px',
-            backgroundColor: '#007bff',
-            color: 'white',
-            border: 'none',
-            borderRadius: '5px'
-          }}
-        >
-          Increment
-        </button>
-        <button 
-          onClick={() => setCount(count - 1)}
-          style={{ 
-            padding: '10px 20px', 
-            fontSize: '16px',
-            backgroundColor: '#dc3545',
-            color: 'white',
-            border: 'none',
-            borderRadius: '5px'
-          }}
-        >
-          Decrement
-        </button>
+    <div className="min-h-screen bg-white text-[#001F3F] p-8">
+      <div className="max-w-4xl mx-auto">
+        <h1 className="text-4xl font-bold text-[#001F3F] mb-8">Counter Page</h1>
+        <div className="text-center mb-8">
+          <p className="text-2xl font-semibold text-[#001F3F] mb-6">Count: {count}</p>
+          <div className="space-x-4">
+            <button 
+              onClick={() => setCount(count + 1)}
+              className="px-6 py-3 bg-[#001F3F] text-white rounded-lg font-medium hover:bg-[#001F3F]/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Increment
+            </button>
+            <button 
+              onClick={() => setCount(count - 1)}
+              className="px-6 py-3 bg-white text-[#001F3F] border-2 border-[#001F3F] rounded-lg font-medium hover:bg-[#001F3F] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Decrement
+            </button>
+          </div>
+        </div>
+        <nav className="flex space-x-4">
+          <Link to="/" className="text-[#001F3F] hover:text-[#001F3F]/70 transition-colors duration-300">Home</Link>
+          <Link to="/about" className="text-[#001F3F] hover:text-[#001F3F]/70 transition-colors duration-300">About</Link>
+          <Link to="/contact" className="text-[#001F3F] hover:text-[#001F3F]/70 transition-colors duration-300">Contact</Link>
+          <Link to="/projects" className="text-[#001F3F] hover:text-[#001F3F]/70 transition-colors duration-300">Projects</Link>
+        </nav>
       </div>
-      <nav>
-        <Link to="/" style={{ marginRight: '10px' }}>Home</Link>
-        <Link to="/about" style={{ marginRight: '10px' }}>About</Link>
-        <Link to="/contact">Contact</Link>
-      </nav>
     </div>
   )
 }
