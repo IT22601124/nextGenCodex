@@ -62,17 +62,16 @@ const testimonials = [
 ];
 
 const techStack = [
-  { name: "React", icon: "⚛️" },
-  { name: "Next.js", icon: "⏭️" },
-  { name: "Node.js", icon: "🟢" },
-  { name: "Tailwind", icon: "🎨" },
-  { name: "AWS", icon: "☁️" },
-  { name: "Docker", icon: "🐳" },
-  { name: "Flutter", icon: "📱" },
-  { name: "Python", icon: "🐍" },
-  { name: "Django", icon: "🦄" },
-  { name: "Flask", icon: "🍶" },
-  { name: "Git", icon: "🔀" },
+  { name: "React" },
+  { name: "Next.js" },
+  { name: "Node.js" },
+  { name: "Tailwind" },
+  { name: "Angular" },
+  { name: "Docker" },
+  { name: "Flutter" },
+  { name: "Python" },
+  { name: "Django" },
+  { name: "Git" },
 ];
 
 function HomePage() {
@@ -123,7 +122,7 @@ function HomePage() {
           <div className="flex justify-center gap-6 mt-10">
             <a
               href="/contact"
-              className="px-10 py-4 rounded-lg font-semibold bg-[#001F3F] text-white hover:bg-[#001F3F]/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="px-10 py-4 rounded-lg font-semibold bg-[#EAD8B1] text-black hover:bg-[#EAD8B1]/90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get Started
             </a>
@@ -176,16 +175,17 @@ function HomePage() {
               Modern technologies powering high-performance solutions
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
-            {techStack.map((tech) => (
-              <div
-                key={tech.name}
-                className="flex flex-col items-center justify-center h-32 bg-[#001F3F] rounded-xl border border-[#001F3F] font-bold text-white shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              >
-                <span className="text-3xl mb-2">{tech.icon}</span>
-                <span>{tech.name}</span>
-              </div>
-            ))}
+          <div className="w-full flex justify-center">
+            <div className="grid grid-cols-5 gap-4">
+              {techStack.map((tech) => (
+                <div
+                  key={tech.name}
+                  className="flex flex-col items-center justify-center h-20 w-20 bg-[#001F3F] rounded-xl border border-[#001F3F] font-bold text-white shadow-sm hover:shadow-lg transition-all duration-300 hover:-translate-y-1 p-2"
+                >
+                  <span className="text-xs sm:text-sm text-center w-full flex justify-center">{tech.name}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -272,7 +272,7 @@ function HomePage() {
           </p>
           <a
             href="/contact"
-            className="inline-block px-14 py-5 bg-[#001F3F] text-white rounded-lg font-bold text-xl hover:bg-[#001F3F]/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="inline-block px-14 py-5 bg-[#EAD8B1] text-black rounded-lg font-bold text-xl hover:bg-[#EAD8B1]/90 transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Contact Us
           </a>

@@ -128,7 +128,7 @@ function About() {
           <div className="flex justify-center space-x-4">
             <a
               href="/contact"
-              className="px-8 py-4 bg-[#001F3F] text-white rounded-lg font-semibold hover:bg-[#001F3F]/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="px-8 py-4 bg-[#EAD8B1] text-black rounded-lg font-semibold hover:bg-[#EAD8B1]/90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get in Touch
             </a>

@@ -13,7 +13,7 @@ function Counter() {
           <div className="space-x-4">
             <button 
               onClick={() => setCount(count + 1)}
-              className="px-6 py-3 bg-[#001F3F] text-white rounded-lg font-medium hover:bg-[#001F3F]/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="px-6 py-3 bg-[#EAD8B1] text-black rounded-lg font-medium hover:bg-[#EAD8B1]/90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Increment
             </button>
