@@ -92,7 +92,8 @@ function Contact() {
                 
                 <button
                   type="submit"
-                  className="w-full px-8 py-4 bg-[#EAD8B1] text-black rounded-lg font-semibold hover:bg-[#EAD8B1]/90 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="w-full px-8 py-4 font-semibold rounded-lg bg-brand-gradient text-white hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  style={{ backgroundImage: 'linear-gradient(90deg, #2D6FFF 0%, #A933FF 100%)' }}
                 >
                   Send Message
                 </button>
