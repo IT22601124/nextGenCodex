@@ -1,5 +1,6 @@
 // src/components/header.jsx
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -7,10 +8,11 @@ const Header = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <h1 className="text-3xl font-extrabold">Nextgen CodeX</h1>
         <nav className="hidden md:flex space-x-8">
-          <a href="/" className="font-semibold hover:text-blue-700 transition-colors duration-300">Home</a>
-          <a href="/services" className="font-semibold hover:text-blue-700 transition-colors duration-300">Services</a>
-          <a href="/about" className="font-semibold hover:text-blue-700 transition-colors duration-300">About</a>
-          <a href="/contact" className="font-semibold hover:text-blue-700 transition-colors duration-300">Contact</a>
+          <Link to="/" className="font-semibold hover:text-blue-700 transition-colors duration-300">Home</Link>
+          <Link to="/about" className="font-semibold hover:text-blue-700 transition-colors duration-300">About</Link>
+          <Link to="/contact" className="font-semibold hover:text-blue-700 transition-colors duration-300">Contact</Link>
+          <Link to="/counter" className="font-semibold hover:text-blue-700 transition-colors duration-300">Counter</Link>
+          <Link to="/payment" className="font-semibold hover:text-blue-700 transition-colors duration-300">Payment</Link>
         </nav>
         <button className="md:hidden">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
