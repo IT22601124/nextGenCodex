@@ -13,13 +13,13 @@ function About() {
       id: 2,
       name: "Tharindu Herath",
       title: "Co-Founder",
-      image: "/images/michael.jpg"
+      image: "/images/tharindu.jpg"
     },
     {
       id: 3,
       name: "Sadeepa Nimsara",
       title: "Co-Founder",
-      image: "/images/emily.jpg"
+      image: "/images/sadeepa.jpg"
     },
     {
       id: 4,
@@ -60,8 +60,13 @@ function About() {
             <h2 className="text-4xl font-bold text-[#001F3F] mb-6">Who We Are</h2>
             <div className="w-24 h-1 bg-[#001F3F] mx-auto"></div>
           </div>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+          <div className="flex flex-col md:flex-row gap-12 items-center">
+            {/* Logo Image */}
+            <div className="flex-shrink-0 w-full md:w-1/3 flex justify-center md:justify-start mb-8 md:mb-0">
+              <img src="/images/logo.png" alt="Nextgen CodeX Logo" className="w-112 h-112 object-contain" />
+            </div>
+            {/* Our Story Text */}
+            <div className="w-full md:w-2/3">
               <h3 className="text-2xl font-semibold text-[#001F3F] mb-4">Our Story</h3>
               <p className="text-[#001F3F] leading-relaxed mb-6">
                 Founded in 2020, Nextgen CodeX emerged from a shared vision to bridge the gap between innovative ideas and digital reality. 
@@ -77,26 +82,6 @@ function About() {
                 Our commitment to excellence, attention to detail, and customer-centric approach has earned us the trust of clients 
                 worldwide, making us their preferred technology partner for digital transformation initiatives.
               </p>
-            </div>
-            <div className="bg-white border border-[#001F3F] p-8 rounded-xl">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#001F3F] mb-2">25+</div>
-                  <div className="text-[#001F3F]">Team Members</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#001F3F] mb-2">50+</div>
-                  <div className="text-[#001F3F]">Projects Completed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#001F3F] mb-2">15+</div>
-                  <div className="text-[#001F3F]">Technologies</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-[#001F3F] mb-2">100%</div>
-                  <div className="text-[#001F3F]">Client Satisfaction</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -180,7 +165,7 @@ function About() {
                   <img 
                     src={member.image} 
                     alt={`${member.name} - ${member.title}`}
-                    className="w-40 h-40 rounded-full object-cover shadow-lg border-4 border-white"
+                    className="w-48 h-48 rounded-full object-cover shadow-lg border-4 border-white"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';

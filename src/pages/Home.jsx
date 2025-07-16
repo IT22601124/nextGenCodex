@@ -110,64 +110,40 @@ function HomePage() {
       </div>
 
       {/* Hero Section */}
-      <section className="min-h-screen bg-white flex items-center">
-        <div className="max-w-7xl mx-auto px-6 py-20">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="min-h-[70vh] bg-white flex items-center border-b border-[#E5E7EB]">
+        <div className="max-w-7xl mx-auto px-6 py-20 w-full">
+          <div className="flex flex-col-reverse lg:flex-row items-center gap-12">
             {/* Left Side - Content */}
-            <div className="text-left space-y-8">
-              {/* Mobile Logo Image (above heading) */}
-              <div className="block lg:hidden pb-4 transition-all duration-300">
-                <img 
-                  src="/images/logo.png" 
-                  alt="Nextgen CodeX Logo"
-                  className="mx-auto w-3/5 sm:w-4/5 max-w-xs object-contain"
-                />
-              </div>
-              {/* Headline */}
-              <div className="space-y-4">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#001F3F] leading-tight">
-                  Transforming Ideas Into
-                  <span className="block bg-clip-text text-transparent bg-brand-gradient">Digital Reality</span>
-                </h1>
-              </div>
-              {/* Subheadline */}
-              <p className="text-lg md:text-xl text-black leading-relaxed max-w-lg">
-                We craft innovative software solutions that drive business growth and technological advancement with precision and passion.
+            <div className="w-full lg:w-2/2 text-left space-y-8">
+              <h1 className="text-5xl md:text-6xl font-extrabold text-[#001F3F] leading-tight mb-4">
+                Empowering Your Digital Vision
+              </h1>
+              <p className="text-lg md:text-xl text-[#374151] leading-relaxed max-w-xl mb-6">
+                Nextgen CodeX delivers innovative, scalable, and secure software solutions tailored to your business needs. Partner with us to transform your ideas into digital reality.
               </p>
-              {/* Call-to-Action Button */}
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
+              <div className="flex flex-col sm:flex-row gap-4 pt-2">
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 font-semibold rounded-lg bg-brand-gradient text-white hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="inline-flex items-center justify-center px-4 py-3 font-semibold rounded-lg bg-brand-gradient text-white hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base"
                   style={{ backgroundImage: 'linear-gradient(90deg, #2D6FFF 0%, #A933FF 100%)' }}
                 >
-                  Get Started Today
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                  </svg>
+                  Get Started
                 </a>
                 <a
                   href="/projects"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-black border-2 border-primary-blue font-semibold rounded-lg hover:bg-primary-blue hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                  className="inline-flex items-center justify-center px-4 py-3 bg-white text-[#001F3F] border-2 border-[#2D6FFF] font-semibold rounded-lg hover:bg-[#2D6FFF] hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-base"
                 >
-                  View Our Work
+                  Our Services
                 </a>
               </div>
             </div>
-            
-            {/* Right Side - Image (Desktop only) */}
-            <div className="relative hidden lg:block">
-              <div className="relative z-10">
-                <img 
-                  src="/images/logo.png" 
-                  alt="Nextgen CodeX - Innovative Software Solutions"
-                  className="w-full h-auto"
-                  onError={(e) => {
-                    e.target.style.display = 'none';
-                    e.target.nextSibling.style.display = 'flex';
-                  }}
-                />
-              </div>
+            {/* Right Side - Image */}
+            <div className="w-full lg:w-1/2 flex justify-center items-center">
+              <img 
+                src="/images/gg1.png" 
+                alt="Nextgen CodeX Logo"
+                className="w-88 h-88 object-contain "
+              />
             </div>
           </div>
         </div>
